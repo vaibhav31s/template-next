@@ -30,11 +30,10 @@ export const NextLinkComposed = forwardRef<
       replace={replace}
       scroll={scroll}
       shallow={shallow}
-      passHref
+      ref={ref}
       locale={locale}
-    >
-      <Anchor ref={ref} {...other} />
-    </NextLink>
+      {...other}
+    />
   );
 });
 
